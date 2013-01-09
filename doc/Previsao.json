@@ -1,0 +1,88 @@
+{
+  "PrevisaoResult": {
+    "hr": "00:10", // horario atua (HH:MM)
+    "p": { // parada
+      "cp": 640000488, // codigo da parada
+      "l": [ // linhas
+        {
+          "c": "8600-10", // codigo da linha
+          "cl": 34200, // codigo interno da linha (?)
+          "lt0": "LGO. DO PAISSANDU", // nome sentido 1
+          "lt1": "TERMINAL PIRITUBA", // nome sentido 2
+          "qv": 1,
+          "sl": 2, // sentido
+          "vs": [ // proximos veiculos que passarao na parada
+            {
+              "a": true, // assessibilidade (cadeira de rodas)
+              "p": "11855", // prefixo do veiculo
+              "px": -46.713368333333328, // latitude
+              "py": -23.488241666666667, // longitude
+              "t": "00:13" // previsao de chegada (HH:MM)
+            }
+          ]
+        },
+        {
+          "c": "948A-10",
+          "cl": 1423,
+          "lt0": "METRO BARRA FUNDA",
+          "lt1": "VILA ZATT",
+          "qv": 1,
+          "sl": 1,
+          "vs": [
+            {
+              "a": false,
+              "p": "11537",
+              "px": -46.715023333333328,
+              "py": -23.477368333333335,
+              "t": "00:14"
+            }
+          ]
+        },
+        {
+          "c": "8400-10",
+          "cl": 34033,
+          "lt0": "PÇ RAMOS DE AZEVEDO",
+          "lt1": "TERMINAL PIRITUBA",
+          "qv": 2,
+          "sl": 2,
+          "vs": [
+            {
+              "a": false,
+              "p": "11531",
+              "px": -46.70544499999999,
+              "py": -23.51105166666667,
+              "t": "00:19"
+            },
+            {
+              "a": true,
+              "p": "11880",
+              "px": -46.643526666666666,
+              "py": -23.540508333333332,
+              "t": "00:40"
+            }
+          ]
+        },
+        {
+          "c": "8015-10",
+          "cl": 1345,
+          "lt0": "TERMINAL PIRITUBA",
+          "lt1": "CEMITÉRIO DE PERUS",
+          "qv": 1,
+          "sl": 1,
+          "vs": [
+            {
+              "a": true,
+              "p": "15029",
+              "px": -46.717053333333325,
+              "py": -23.439540000000004,
+              "t": "00:27"
+            }
+          ]
+        }
+      ],
+      "np": "ZANINI CB",
+      "px": -46.720904,
+      "py": -23.482466
+    }
+  }
+}
