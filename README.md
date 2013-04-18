@@ -84,7 +84,7 @@ retornará o seguinte resultado:
     }
 
 
-## Previsao
+## Previsão
 
 Previsão de chegada dos próximos ônibus de cada uma das linhas que atendem essa parada.
 
