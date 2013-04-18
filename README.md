@@ -107,9 +107,9 @@ O nome dos atributos na representação das previsões são bem menos intuitivos
 | `p.l[n].lt0`      | letreiro sentido 1
 | `p.l[n].lt1`      | letreiro sentido 2
 | `p.l[n].qv`       | ?
-| `p.l[n].sl`       | sentido atual [1|2]
+| `p.l[n].sl`       | sentido atual \[1|2\]
 | `p.l[n].vs`       | lista dos próximos veículos que passarão na parada
-| `p.l[n].vs[m].a`  | assessibilidade [true|false]
+| `p.l[n].vs[m].a`  | assessibilidade \[true\|false\]
 | `p.l[n].vs[m].p`  | prefixo do veículo
 | `p.l[n].vs[m].px` | latitude atual do veículo
 | `p.l[n].vs[m].py` | longitude atual do veículo
