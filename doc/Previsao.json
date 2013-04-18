@@ -1,6 +1,6 @@
 {
   "PrevisaoResult": {
-    "hr": "00:10", // horario atua (HH:MM)
+    "hr": "00:10", // horario atual (HH:MM)
     "p": { // parada
       "cp": 640000488, // codigo da parada
       "l": [ // linhas

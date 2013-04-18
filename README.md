@@ -18,7 +18,7 @@ Listagem e busca das paradas de ônibus monitoradas pelo programa Olho Vivo.
 
 O valor do parâmetro `termosBusca` será comparado com os atributos `Endereco` e `Nome` do recurso, p.ex.:
 
-    http://200.189.189.54/InternetServices/BuscaParadasSIM?termosBusca=paulista
+    curl http://200.189.189.54/InternetServices/BuscaParadasSIM?termosBusca=paulista
 
 retornará o seguinte resultado:
 
@@ -90,5 +90,32 @@ Previsão de chegada dos próximos ônibus de cada uma das linhas que atendem es
 
     http://200.189.189.54/InternetServices/Previsao?codigoParada={codigo_parada}
 
-Ver [doc/Previsao.json](https://github.com/marcoshack/sptrans/blob/master/doc/Previsao.json) para mais informações sobre o significado dos atributos do objeto retornado.
+O parâmetro `codigoParada`, como o nome sugere, deve receber o valor indicado no atributo `CodigoParada` do recurso Parada. Por exemplo, o código da parada do cruzamento da Av. Paulista com a Rebolças é `260015039`, para consultar a previsão dos próximos ônibus nessa parada:
+
+    curl http://200.189.189.54/InternetServices/Previsao?codigoParada=260015039
+
+O nome dos atributos na representação das previsões são bem menos intuitivos que os demais recursos, então segue a lista dos atributos e respectivos significados:
+
+| atributo        | descrição
+|-----------------|-------------------------------------------------------
+| hr              | hora atual no servidor (HH:MM)
+| p               | objeto Parada
+| p.cp            | código da parada
+| p.l             | lista de linhas com previsão
+| p.l[n].c        | código da linha
+| p.l[n].cl       | código interno da linha
+| p.l[n].lt0      | letreiro sentido 1
+| p.l[n].lt1      | letreiro sentido 2
+| p.l[n].qv       | ?
+| p.l[n].sl       | sentido atual [1|2]
+| p.l[n].vs       | lista dos próximos veículos que passarão na parada
+| p.l[n].vs[m].a  | assessibilidade [true|false]
+| p.l[n].vs[m].p  | prefixo do veículo
+| p.l[n].vs[m].px | latitude atual do veículo
+| p.l[n].vs[m].py | longitude atual do veículo
+| p.l[n].vs[m].t  | previsão de chegada na parada (HH:MM)
+| p.np            | nome da próxima parada
+| p.px            | latitude da próxima parada
+| p.py            | longitude da próxima parada
+
 
