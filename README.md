@@ -101,21 +101,19 @@ O nome dos atributos na representação das previsões são bem menos intuitivos
 | `hr`              | hora atual no servidor (HH:MM)
 | `p`               | objeto Parada
 | `p.cp`            | código da parada
+| `p.px`            | longitude da parada
+| `p.py`            | latitude da parada
 | `p.l`             | lista de linhas com previsão
 | `p.l[n].c`        | código da linha
 | `p.l[n].cl`       | código interno da linha
-| `p.l[n].lt0`      | letreiro sentido 1
-| `p.l[n].lt1`      | letreiro sentido 2
-| `p.l[n].qv`       | ?
-| `p.l[n].sl`       | sentido atual \[1|2\]
+| `p.l[n].lt0`      | letreiro da linha, sentido 1
+| `p.l[n].lt1`      | letreiro da linha, sentido 2
+| `p.l[n].qv`       | quantidade de veículos com previsão na lista `vs`
+| `p.l[n].sl`       | sentido da linha nas previsões \[1|2\]
 | `p.l[n].vs`       | lista dos próximos veículos que passarão na parada
-| `p.l[n].vs[m].a`  | assessibilidade \[true\|false\]
+| `p.l[n].vs[m].a`  | acessibilidade \[true\|false\]
 | `p.l[n].vs[m].p`  | prefixo do veículo
-| `p.l[n].vs[m].px` | latitude atual do veículo
-| `p.l[n].vs[m].py` | longitude atual do veículo
+| `p.l[n].vs[m].px` | longitude atual do veículo
+| `p.l[n].vs[m].py` | latitude atual do veículo
 | `p.l[n].vs[m].t`  | previsão de chegada na parada (HH:MM)
 | `p.np`            | nome da próxima parada
-| `p.px`            | latitude da próxima parada
-| `p.py`            | longitude da próxima parada
-
-
