@@ -103,6 +103,7 @@ O nome dos atributos na representação das previsões são bem menos intuitivos
 | `p.cp`            | código da parada
 | `p.px`            | longitude da parada
 | `p.py`            | latitude da parada
+| `p.np`            | nome da próxima parada
 | `p.l`             | lista de linhas com previsão
 | `p.l[n].c`        | código da linha
 | `p.l[n].cl`       | código interno da linha
@@ -116,4 +117,3 @@ O nome dos atributos na representação das previsões são bem menos intuitivos
 | `p.l[n].vs[m].px` | longitude atual do veículo
 | `p.l[n].vs[m].py` | latitude atual do veículo
 | `p.l[n].vs[m].t`  | previsão de chegada na parada (HH:MM)
-| `p.np`            | nome da próxima parada
