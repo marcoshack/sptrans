@@ -18,4 +18,4 @@ tmp
 .*.sw?
 *.sw?
 nohup.out
-
+.rvmrc
