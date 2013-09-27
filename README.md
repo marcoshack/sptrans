@@ -1,10 +1,14 @@
+---
+
+**IMPORTANTE**: Esse projeto não tem relação alguma com a SPTrans. Não temos informações sobre a possibilidade ou legalidade de utilização a API em aplicações de terceiros. Entre em contato com a SPTrans antes de utilizar esses recursos.
+
+---
+
 # Olho Vivo SPTrans
 
 O site [Olho Vivo da SPTrans](http://olhovivo.sptrans.com.br/) oferece informações sobre a localização dos ônibus em uma série de linhas da capital Paulista.
 
-Esse projeto visa documentar a API web utilizada pelo site, que basicamente é uma aplicação JavaScript estática, para que, se autorizado pela SPTrans, possa ser utilizada por outras aplicações.
-
-**IMPORTANTE**: Esse projeto não tem relação alguma com a SPTrans. Não temos informações sobre a possibilidade de utilizar a API em aplicações de terceiros. Entre em contato com a SPTrans antes de utilizar esses recursos.
+Esse projeto visa documentar a API web utilizada pelo site para que, se autorizado pela SPTrans, possa ser utilizada por outras aplicações.
 
 # API
 
