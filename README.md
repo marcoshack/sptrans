@@ -1,8 +1,4 @@
----
-
-**IMPORTANTE**: Esse projeto não tem relação alguma com a SPTrans. Não temos informações sobre a possibilidade ou legalidade de utilização a API em aplicações de terceiros. Entre em contato com a SPTrans antes de utilizar esses recursos.
-
----
+> **IMPORTANTE**: Esse projeto não tem relação alguma com a SPTrans. Não temos informações sobre a possibilidade ou legalidade de utilização a API em aplicações de terceiros. Entre em contato com a SPTrans antes de utilizar esses recursos.
 
 # Olho Vivo SPTrans
 
@@ -29,7 +25,7 @@ retornará o seguinte resultado de erro em caso de falta de autorização em qua
 
 ## Paradas
 
-Listagem e busca das paradas de ônibus monitoradas pelo programa Olho Vivo. 
+Listagem e busca das paradas de ônibus monitoradas pelo programa Olho Vivo.
 
     http://olhovivo.sptrans.com.br/v0/Parada/Buscar[?termosBusca={termo}]
 
