@@ -13,7 +13,7 @@ module Sptrans
     end
 
     def self.find(query)
-      response = HTTParty.get("http://200.189.189.54/InternetServices/BuscaParadasSIM?termoBusca=#{query}")
+      response = HTTParty.get(" http://olhovivo.sptrans.com.br/v0/Parada/Buscar?termoBusca=#{query}")
       response["BuscaParadasSIMResult"].map do |stop|
         BusStop.new id: stop["CodigoParada"], name: stop["Nome"], coord: "#{stop["Latitude"]}, #{stop["Longitude"]}"
       end
