@@ -1,0 +1,16 @@
+{
+	"body": "\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Error</title>\r\n</head>\r\n<body>\r\n    <hgroup>\r\n        <h1>Error.</h1>\r\n        <h2>An error occurred while processing your request.</h2>\r\n    </hgroup>\r\n</body>\r\n</html>",
+	"headers": {
+		"cache-control": "private", 
+		"content-type": "text/html; charset=utf-8", 
+		"server": "Microsoft-IIS/7.5", 
+		"x-frame-options": "DENY", 
+		"x-aspnetmvc-version": "4.0", 
+		"x-aspnet-version": "4.0.30319", 
+		"set-cookie": "apiCredentials-v0=BD270D9960A8B4242193B96231A27B2B646C87AF81B28917AD9BD3C2E5A54C3019EA2E9E550F36F36CD658380858052CE795303CF40970D1920D0D451514E5AE975FEDBCB4669F78DD47D05F1C3DE6197C0A36A4CAA078D777D47FC623F336B0BAE13A115A4A0A71BBFDFE0613C3101CBBA6BAF273123DA1719FC211056301F507FF61E4F6216405628F57847A61EC7C815B1C4539D6517CECA43AF1BD3620C6075B5DA9506040655A14EDE925B55B2EF57717FC887307AFEB485217E0C6B9DD49697580C2E244525017A31A112EC7A0; path=/; HttpOnly", 
+		"x-powered-by": "ASP.NET", 
+		"date": "Tue, 15 Oct 2013 21:23:14 GMT", 
+		"connection": "close", 
+		"content-length": "276"
+	}
+}
