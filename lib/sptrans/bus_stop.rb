@@ -1,21 +1,17 @@
 module Sptrans
-  class BusStop < Hashie::Mash
-    def initialize(args)
-      args.each_pair do |k,v|
-        self[k] = v
-      end
-      self.address = Geocoder.address self.coord
-    end
+  class BusStop < OpenStruct
 
     def address
-      self["address"] = Geocoder.address self.coord
-      return self.address
+      Geocoder.address self.coord
     end
 
-    def self.find(query)
-      response = HTTParty.get(" http://olhovivo.sptrans.com.br/v0/Parada/Buscar?termoBusca=#{query}")
-      response["BuscaParadasSIMResult"].map do |stop|
-        BusStop.new id: stop["CodigoParada"], name: stop["Nome"], coord: "#{stop["Latitude"]}, #{stop["Longitude"]}"
+    def self.find(name)
+      Sptrans::Api.bus_stop(name).map do |bus_stop|
+        BusStop.new(
+          id:       bus_stop["CodigoParada"],
+          name:     bus_stop["Nome"],
+          coord:    "#{bus_stop["Latitude"]}, #{bus_stop["Longitude"]}"
+        )
       end
     end
   end
